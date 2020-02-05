@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load wagtailimages_tags %}
+{% load wagtailcore_tags %}
+{% block content %}
+<!-- {% image self.head_image fill-900x400 as banner %} -->
+<!-- start head-short -->
+<section class="section-padding">
+    <div class="container">
+        <div class="head-short">
+            <h1 style="color: #fff; letter-spacing: 20px;">
+                CONTACT US
+            </h1>
+        </div>
+        <div class="whitepaper-custom-text">
+            <p>
+                {{self.intro | safe}}
+            </p>
+        </div>
+        <div class="line-full-width"></div>
+        <div class="whitepaper-custom-summary">
+            <p>
+                {{self.summary | safe}}
+            </p>
+        </div>
+        <form action="{% pageurl page %}" method="POST" class="contact-form">
+            {% csrf_token %}
+            {{ form.as_ul }}
+            <input type="submit" class="submit-button">
+        </form>
+        
+</section>
+    
+{% endblock content%}
+
+

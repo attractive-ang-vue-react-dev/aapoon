@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- start faq-->
+    <section class="faq section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col col-md-6 left-col">
+                    <div class="inner">
+                        <a href="https://www.youtube.com/embed/opj24KnzrWo?autoplay=1" class="video-play video-btn" data-type="iframe"><i class="fa fa-play"></i></a>
+                    </div>
+                </div> -->
+
+                <div class="col col-md-12 right-col">
+                    <div class="title">
+                        <h2>Frequently asked question.</h2>
+                        <!-- <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, con sectetur adipisci velit, sed quia non numquam</p> -->
+                    </div>
+
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default current">
+                            <div class="panel-heading">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">1. ABOUT SOCIALCHAINZ</a>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                    
+                                        <div class="panel-heading">
+                                            <a class="collapsed" data-toggle="collapse1" data-parent="#accordion" href="#collapseOne-Two">2. ENROLLING</a>
+                                        </div>
+                                        <div id="collapseOne-Two" class="panel-collapse collapse1">
+                                            <div class="panel-body">
+                                                <div class="img-holder">
+                                                    <img src="{% static 'images/faq/thumb/img-1.jpg' %}" alt class="img img-responsive">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">2. ENROLLING</a>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="img-holder">
+                                        <img src="{% static 'images/faq/thumb/img-1.jpg' %}" alt class="img img-responsive">
+                                    </div>
+                                    <div class="details">
+                                        <p>
+                                            Why does SocialChainz require me to provide my government issued photo ID for enrollment?
+                                            <br/>
+                                            What kinds of ID can I use to enroll?
+                                            <br/>
+                                            Can I use my school or college or work ID for enrollment?
+                                            <br/>
+                                            What does SocialChainz do with my photo ID?
+                                            <br/>
+                                            How long does it take to get my ID verified?
+                                            <br/>
+                                            How can I be sure that my ID data is safe with SocialChainz?
+                                            <br/>
+                                            Why do I need to update my Profile and Interests information in my account?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">3. PRIVACY RELATED</a>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="img-holder">
+                                        <img src="{% static 'images/faq/thumb/img-1.jpg' %}" alt class="img img-responsive">
+                                    </div>
+                                    <div class="details">
+                                        <p>Natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefour">4. SOCIALCHAINZ POLICIES </a>
+                            </div>
+                            <div id="collapsefour" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="img-holder">
+                                        <img src="{% static 'images/faq/thumb/img-1.jpg' %}" alt class="img img-responsive">
+                                    </div>
+                                    <div class="details">
+                                        <p>Natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefive">5. PERSONAL DATA MANAGEMENT </a>
+                            </div>
+                            <div id="collapsefive" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="img-holder">
+                                        <img src="{% static 'images/faq/thumb/img-1.jpg' %}" alt class="img img-responsive">
+                                    </div>
+                                    <div class="details">
+                                        <p>Natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+    </section>
+    <!-- end faq-->
+{% endblock content %}

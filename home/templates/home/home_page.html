@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+
+{% endblock extra_css %}
+
+{% block content %}
+    <!-- start of hero -->   
+    <section class="hero-slider-wrapper container">
+        <div class="hero-slider home1-hero-slider">
+            
+            {% for slide in page.slides %}
+                    {% include_block slide %}
+            {% endfor %}
+
+        </div>
+    </section>
+    <!-- end of hero slider -->
+    
+    
+    <!-- start faq-->
+    <section class="faq section-padding">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col col-md-6 right-col">
+                    <div class="discription-row">
+                        <p>
+                            {{self.video_section_subscribe | safe}}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col col-md-6 left-col">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="396" height="223" src="https://www.youtube.com/embed/cq3r2zbscqE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>" allowfullscreen></iframe>
+                      </div>
+                </div>
+            </div> <!-- end row -->
+            
+            <div class="line"></div>
+        </div> <!-- end container -->
+    </section>
+    <!-- end faq-->
+
+
+    <!-- start featured -->
+    <section class="featured section-padding" id="service">
+        <div class="container">
+            <div class="row section-title">
+                <h2>{{self.card_title}}</h2>
+            </div> 
+            <div class="row">
+                {% for card in page.cards %}
+                    {% include_block card %}
+                {% endfor %}
+            </div> <!-- end row -->
+            <div class="row app-images">
+                    <div>
+                        <a href="https://apps.apple.com/us/app/socialchainz/id1484191346" target="_blank">
+                            <img src="{% static 'images/apple-store.png' %}" alt="" title="" >
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=go.socialchains.app" target="_blank">
+                            <img src="{% static 'images/google-play.png' %}" alt="" title="" >
+                        </a>
+                    </div>
+                    <a class="invest-btn" href="https://apps.apple.com/us/app/socialchainz/id1484191346" target="_blank">
+                        I N V E S T
+                    </a>
+            </div>
+        </div> <!-- end container -->
+    </section>
+    <!-- end featured -->
+
+
+        
+
+    
+{% endblock content %}

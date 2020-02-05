@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load wagtailimages_tags %}
+{% load wagtailcore_tags %}
+{% block content %}
+<!-- {% image self.head_image fill-900x400 as banner %} -->
+<!-- start head-short -->
+<section class="section-padding">
+    <h1>{{page.title}}</h1>
+    <p>
+        {{self.thank_you_text|safe}}
+    </p>
+</section>
+{% endblock content%}

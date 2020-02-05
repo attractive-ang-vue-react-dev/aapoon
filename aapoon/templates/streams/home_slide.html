@@ -1,0 +1,14 @@
+{% load wagtailimages_tags %}
+<div class="slide">
+    {% image self.image fill-1080x386 as img %}
+    <img src="{{ img.url }}" alt class="slider-bg" >
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col col-xs-12 slide-caption">
+                <h1>{{self.title}}</h1>
+                <p>{{self.subtitle}}</p>
+                <a href="#" class="btn theme-btn">Invest</a>
+            </div>
+        </div>
+    </div> -->
+</div>
