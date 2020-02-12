@@ -1,0 +1,18 @@
+{% load wagtailimages_tags %}
+{% load static %}
+{% image self.news_image fill-100x100 as img %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#{{ id}}">{{ self.title }}</a>
+    </div>
+    <div id="{{ id }}" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="img-holder">
+                <img src="{% static 'images/faq/thumb/img-1.jpg' %}" alt class="img img-responsive">
+            </div>
+            <div class="details">
+                <p>{{ self.content }}</p>
+            </div>
+        </div>
+    </div>
+</div>
